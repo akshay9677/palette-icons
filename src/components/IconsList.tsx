@@ -13,7 +13,7 @@ const IconsList: React.FC<IconListProps> = ({ svgList, count }) => {
   const [iconList, setIconList] = useState(svgList);
 
   const changeIcons = useCallback(
-    (search) => {
+    (search: string) => {
       setIconList(() => {
         if (search !== "") {
           return svgList.filter((svg) => {
