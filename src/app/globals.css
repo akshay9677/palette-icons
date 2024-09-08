@@ -3,25 +3,41 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --neutral1: 255 255 255;
+  --neutral2: 247 247 247;
+  --neutral3: 242 242 242;
+  --neutral4: 227 227 227;
+  --neutral5: 201 201 201;
+  --neutral6: 145 145 145;
+  --neutral7: 61 61 61;
+  --neutral8: 39 39 39;
+  --neutral9: 20 20 20;
+  --neutral10: 0 0 0;
+
+  --brand-primary-1: 4 103 253;
+  --brand-primary-2: 0 82 206;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.theme-light {
+  --container-primary: var(--neutral1);
+  --container-secondary: var(--neutral2);
+  --content-primary: var(--neutral10);
+  --content-secondary: var(--neutral7);
+  --content-tertiary: var(--neutral6);
+  --border-primary: var(--neutral4);
+  --border-secondary: var(--neutral3);
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.theme-dark {
+  --container-primary: var(--neutral10);
+  --container-secondary: var(--neutral9);
+  --content-primary: var(--neutral1);
+  --content-secondary: var(--neutral5);
+  --content-tertiary: var(--neutral6);
+  --border-primary: var(--neutral7);
+  --border-secondary: var(--neutral8);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::-webkit-scrollbar {
+  display: none;
 }

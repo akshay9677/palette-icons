@@ -1,0 +1,12 @@
+<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="2.75" y="4.75" width="18.5" height="8.5" rx="1.25" stroke="currentColor" stroke-width="1.5"/>
+<path d="M6 14V20.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M17.25 20.5C17.25 20.9142 17.5858 21.25 18 21.25C18.4142 21.25 18.75 20.9142 18.75 20.5H17.25ZM17.25 14V20.5H18.75V14H17.25Z" fill="currentColor"/>
+<line x1="3.576" y1="12.735" x2="8.576" y2="4.735" stroke="currentColor"/>
+<line x1="6.576" y1="12.735" x2="11.576" y2="4.735" stroke="currentColor"/>
+<line x1="9.576" y1="12.735" x2="14.576" y2="4.735" stroke="currentColor"/>
+<line x1="12.576" y1="12.735" x2="17.576" y2="4.735" stroke="currentColor"/>
+<line x1="15.576" y1="12.735" x2="20.576" y2="4.735" stroke="currentColor"/>
+<line x1="18.576" y1="12.735" x2="20.9239" y2="8.97837" stroke="currentColor"/>
+<line x1="2.576" y1="10.1876" x2="5.98389" y2="4.735" stroke="currentColor"/>
+</svg>
