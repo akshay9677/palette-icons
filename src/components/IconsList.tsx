@@ -12,17 +12,20 @@ type IconListProps = {
 const IconsList: React.FC<IconListProps> = ({ svgList, count }) => {
   const [iconList, setIconList] = useState(svgList);
 
-  const changeIcons = useCallback((search) => {
-    setIconList((prevVal) => {
-      if (search !== "") {
-        return svgList.filter((svg) => {
-          search = search.toLowerCase();
-          return svg.name.includes(search) || search.includes(svg.name);
-        });
-      }
-      return svgList;
-    });
-  }, []);
+  const changeIcons = useCallback(
+    (search) => {
+      setIconList(() => {
+        if (search !== "") {
+          return svgList.filter((svg) => {
+            search = search.toLowerCase();
+            return svg.name.includes(search) || search.includes(svg.name);
+          });
+        }
+        return svgList;
+      });
+    },
+    [svgList]
+  );
 
   return (
     <div className="w-full pt-16">
@@ -33,7 +36,7 @@ const IconsList: React.FC<IconListProps> = ({ svgList, count }) => {
 
       <div className="flex py-10 gap-4 flex-wrap items-center justify-center">
         {iconList.map((svg) => {
-          return <IconCard svg={svg} />;
+          return <IconCard key={svg.name} svg={svg} />;
         })}
       </div>
     </div>
