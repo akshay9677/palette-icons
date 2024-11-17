@@ -29,10 +29,12 @@ const IconsList: React.FC<IconListProps> = ({ svgList, count }) => {
 
   return (
     <div className="w-full pt-16">
-      <SearchInput
-        placeholder={`Search all ${count} icons`}
-        onChange={changeIcons}
-      />
+      <div className="px-3 lg:px-0 xl:px-0">
+        <SearchInput
+          placeholder={`Search all ${count} icons`}
+          onChange={changeIcons}
+        />
+      </div>
 
       <div className="flex py-10 gap-4 flex-wrap items-center justify-center">
         {iconList.map((svg) => {

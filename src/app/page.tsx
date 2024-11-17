@@ -24,11 +24,11 @@ export default function Home() {
         <div className="text-5xl font-bold tracking-tight">
           {"Open source icons"}
         </div>
-        <div className="text-5xl font-bold tracking-tight text-content-tertiary mt-2">
-          Updated weekly.
+        <div className="text-5xl font-bold tracking-tight text-content-tertiary mt-2 text-center">
+          {"Updated whenever I'm bored."}
         </div>
 
-        <div className="text-center mt-6">
+        <div className="text-center mt-6 px-3 lg:px-0 xl:px-0">
           Introducing the{" "}
           <a
             href="https://ak-palette.netlify.app/"
@@ -38,8 +38,8 @@ export default function Home() {
             Palette Design System
           </a>{" "}
           Icon Library – a fully open-source, ever-growing collection of icons.
-          New, randomly generated icons added weekly to spark creativity and
-          keep your projects fresh!
+          New, randomly generated icons to spark creativity and keep your
+          projects fresh!
         </div>
         <IconsList svgList={svgList} count={svgList.length} />
 
